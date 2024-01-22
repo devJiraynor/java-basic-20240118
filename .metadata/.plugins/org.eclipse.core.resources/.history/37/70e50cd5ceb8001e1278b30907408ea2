@@ -42,9 +42,11 @@ public class D_Control {
 		age = 20;
 		
 		if (age > 19) {
+			String result = "성인입니다.";
 			System.out.println("성인입니다.");
 		} 
 		else {
+			String result = "성인입니다.";
 			System.out.println("미성년자입니다.");
 		}
 		

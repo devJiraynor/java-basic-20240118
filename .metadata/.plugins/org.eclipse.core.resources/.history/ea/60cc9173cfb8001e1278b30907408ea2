@@ -40,11 +40,14 @@ public class D_Control {
 		// 1. else문은 반드시 if문 이후에 와야함 (else 단독으로 사용이 불가능)
 		// 2. else문에는 조건을 작성하지 않음
 		age = 20;
+		String result = "성인입니다.";
 		
 		if (age > 19) {
+			String result = "성인입니다.";
 			System.out.println("성인입니다.");
 		} 
 		else {
+			String result = "성인입니다.";
 			System.out.println("미성년자입니다.");
 		}
 		
