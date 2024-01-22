@@ -161,6 +161,7 @@ public class D_Control {
 				return;
 			}
 			
+			
 		} else {
 			System.out.println("비정상 ㄱ");
 			return;

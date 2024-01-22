@@ -130,41 +130,7 @@ public class D_Control {
 		
 		
 		int a = 0, b = 0, c = 0;
-		if (a == 1) {
-			
-			System.out.println();
-			System.out.println();
-			System.out.println();
-			System.out.println();
-			
-			if (b == 2) {
-				
-				System.out.println();
-				System.out.println();
-				System.out.println();
-				System.out.println();
-				
-				if (c == 3) {
-					
-					System.out.println();
-					System.out.println();
-					System.out.println();
-					System.out.println();
-					
-				} else {
-					System.out.println("비정상 ㄴ");
-					return;
-				}
-				
-			} else {
-				System.out.println("비정상 ㅇ");
-				return;
-			}
-			
-		} else {
-			System.out.println("비정상 ㄱ");
-			return;
-		}
+		
 		
 		
 	}

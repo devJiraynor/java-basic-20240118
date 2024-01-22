@@ -136,9 +136,13 @@ public class D_Control {
 			System.out.println();
 			System.out.println();
 			System.out.println();
+			System.out.println();
+			System.out.println();
 			
 			if (b == 2) {
 				
+				System.out.println();
+				System.out.println();
 				System.out.println();
 				System.out.println();
 				System.out.println();
@@ -150,19 +154,19 @@ public class D_Control {
 					System.out.println();
 					System.out.println();
 					System.out.println();
+					System.out.println();
+					System.out.println();
 					
 				} else {
-					System.out.println("비정상 ㄴ");
 					return;
 				}
 				
 			} else {
-				System.out.println("비정상 ㅇ");
 				return;
 			}
 			
+			
 		} else {
-			System.out.println("비정상 ㄱ");
 			return;
 		}
 		
