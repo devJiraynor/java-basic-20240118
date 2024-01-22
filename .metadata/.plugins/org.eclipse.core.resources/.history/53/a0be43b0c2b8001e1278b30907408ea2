@@ -145,10 +145,7 @@ public class C_Operator {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("나이 : ");
 		
-		int age = scanner.nextInt();
-		
-		String stringResult = age > 19 ? "성인" : "미성년자";
-		System.out.println(stringResult);
+		String stringResult = 
 		
 	}
 
