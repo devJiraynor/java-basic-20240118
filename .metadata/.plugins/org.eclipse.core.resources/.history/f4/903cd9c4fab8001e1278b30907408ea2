@@ -256,15 +256,8 @@ public class D_Control {
 			
 			System.out.println("입력 값 : " + input);
 			System.out.println("while 반복문 실행중...");
-			
 		}
 		System.out.println("while 반복문 종료!");
-		
-		for (int index = 0; index < 10; index ++) {
-			if (index % 3 == 0) continue;
-			if (index == 8) break;
-			System.out.println(index);
-		}
 		
 	}
 
