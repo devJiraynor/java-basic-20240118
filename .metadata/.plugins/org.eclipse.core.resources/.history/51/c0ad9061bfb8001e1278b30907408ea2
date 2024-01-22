@@ -134,10 +134,6 @@ public class C_Operator {
 		System.out.println(booleanResult);
 		System.out.println(b);
 		
-		booleanResult = (a < b) || (a > ++b);
-		System.out.println(booleanResult);
-		System.out.println(b);
-		
 	}
 
 }

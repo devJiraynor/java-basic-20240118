@@ -130,13 +130,7 @@ public class C_Operator {
 		
 		
 		// a: 15, b: 7
-		booleanResult = (a > b) && (a > ++b);
-		System.out.println(booleanResult);
-		System.out.println(b);
-		
-		booleanResult = (a < b) || (a > ++b);
-		System.out.println(booleanResult);
-		System.out.println(b);
+		booleanResult = a < b && a > ++b;
 		
 	}
 
