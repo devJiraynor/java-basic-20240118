@@ -21,7 +21,7 @@ package ch02;
 // 출력
 
 class GalaxyPhone {
-	String maker;
+	static String maker;
 	String modelName;
 	String owner;
 	String telNumber;
