@@ -21,7 +21,7 @@ package ch02;
 // 출력
 
 class GalaxyPhone {
-	String maker;
+	static String maker;
 	String modelName;
 	String owner;
 	String telNumber;
@@ -36,7 +36,7 @@ class GalaxyPhone {
 		System.out.println(toTelNumber + "로 전화를 겁니다.");
 	}
 	
-	void emergency () {
+	static void emergency () {
 		System.out.println("112로 전화를 겁니다.");
 	}
 	
@@ -56,13 +56,15 @@ public class A_Example {
 		GalaxyPhone s23 = new GalaxyPhone();
 		GalaxyPhone s24 = new GalaxyPhone();
 		
-		s23.maker = "SAMSUNG";
+		GalaxyPhone.maker = "LG";
+		
+		// s23.maker = "SAMSUNG";
 		s23.modelName = "s23";
 		s23.owner = "홍길동";
 		s23.telNumber = "010-1234-5678";
 		s23.power = false;
 
-		s24.maker = "SAMSUNG";
+		// s24.maker = "SAMSUNG";
 		s24.modelName = "s24";
 		s24.owner = "김철수";
 		s24.telNumber = "010-5678-1234";
@@ -71,6 +73,7 @@ public class A_Example {
 		s23.onPower();
 		s23.getInfomation();
 		
+		GalaxyPhone.emergency();
 		s23.emergency();
 		s24.emergency();
 		
