@@ -44,6 +44,16 @@ class ExampleClass1 {
 // 국적		(country - String)
 // 주발		(mainFoot - String)
 // 팀		(team - String)
+// 골		(goal - int)
+// 어시스트	(assist - int)
+// 경고수		(foul - int)		
+
+// 잠자기 		(sleep) - 작업 : "(취침시간) ~ (기상시간)까지 취침" 출력
+// 밥먹기			(eat) - 작업 : "(음식) 먹음" 출력
+// 훈련하기		(train) - 작업 : "훈련!!" 출력
+// 경기결과내기	(setGameResult) - 작업 : 골, 어시스트, 경고수 속성 변경
+// 이적하기		(moveTeam) - 작업 : 팀 변경
+
 class FootballPlayerA {
 	String name;
 	String position;
@@ -53,15 +63,61 @@ class FootballPlayerA {
 	String country;
 	String mainFoot;
 	String team;
+	int goal;
+	int assist;
+	int foul;
+	
+	void sleep (String bedtime, String wakeUpTime) {
+		System.out.println(bedtime + "~" + wakeUpTime + "까지 취침");
+	}
+	
+	void eat (String food) {
+		System.out.println(food + " 먹음");
+	}
+	
+	void train () {
+		System.out.println("훈련!!");
+	}
+	
+	void setGameResult (int goalResult, int assistResult, int foulResult) {
+		goal += goalResult;
+		assist += assistResult;
+		foul += foulResult;
+	}
+	
+	void moveTeam (String destinationTeam) {
+		team = destinationTeam;
+	}
 }
 
 public class A_ClassAndObject {
 	
-	String team;
+	// 전역 필드 (전역 변수)
+	// String team;
 
 	public static void main(String[] args) {
+		// 지역 변수
+		// String team;
 		
-		String team;
+		// 인스턴스: 특정 클래스로 정의된 것을 실체화 한것 (객체)
+		// 클래스명 참조변수명 = new 클래스명();
+		ExampleClass1 instance1 = new ExampleClass1();
+		ExampleClass1 instance2 = new ExampleClass1();
+		
+		System.out.println(instance1);
+		System.out.println(instance2);
+		
+		// 인스턴스가 가지고 있는 속성 접근 방법
+		// 인스턴스.속성명;
+		instance1.attribute1 = 10;
+		instance1.attribute2 = 3.14;
+		System.out.println(instance1.attribute1);
+		System.out.println(instance1.attribute2);
+		System.out.println(instance2.attribute1);
+		System.out.println(instance2.attribute2);
+		
+		// 인스턴스가 가지고 있는 메서드 호출 방법
+		// 인스턴스.메서드();
 		
 	}
 
