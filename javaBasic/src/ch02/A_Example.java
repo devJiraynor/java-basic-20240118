@@ -93,6 +93,53 @@ class Drama {
 	}
 }
 
+// TriangleMath
+// 빗변 구하기 - getHypotenuse
+// 둘레 구하기 - getCircumference
+// sin 구하기 - getSin
+// cos 구하기 - getCos
+// tan 구하기 - getTan
+
+class TriangleMath {
+	
+	// static final double PI = 3.14;
+	
+	static double getHypotenuse (int bottom, int height) {
+		if (bottom <= 0 || height <= 0) return 0;
+		// if (!(bottom > 0 && height > 0))
+		
+		double result = Math.pow(bottom, 2) + Math.pow(height, 2);
+		return Math.sqrt(result);
+	}
+	
+	static double getCircumferenceInt (int height, int bottom, int hypotenuse) {
+		if (bottom <= 0 || height <= 0 || hypotenuse <= 0) return 0;
+		return height + bottom + hypotenuse;
+	}
+	
+	static double getCircumferenceDouble (double height, double bottom, double hypotenuse) {
+		if (bottom <= 0 || height <= 0 || hypotenuse <= 0) return 0;
+		return height + bottom + hypotenuse;
+	}
+	
+	static double getSin(int height, int hypotenuse) {
+		if (height <= 0 || hypotenuse <= 0) return 0;
+		return height / hypotenuse;
+	}
+	
+	static double getCos(int bottom, int hypotenuse) {
+		if (bottom <= 0 || hypotenuse <= 0) return 0;
+		return bottom / hypotenuse;
+	}
+	
+	static double getTan(int height, int bottom) {
+		if (bottom <= 0 || height <= 0) return 0;
+		return height / bottom;
+	}
+	
+}
+
+
 public class A_Example {
 
 	public static void main(String[] args) {
@@ -133,6 +180,13 @@ public class A_Example {
 		
 		// star.series;
 		// star.getInfomation();
+		
+		TriangleMath triangleMath = new TriangleMath();
+		double bit = TriangleMath.getHypotenuse(3, 4);
+		System.out.println(bit);
+		
+		// System.out.println(TriangleMath.PI);
+		// TriangleMath.PI = 0.0;
 		
 	}
 
