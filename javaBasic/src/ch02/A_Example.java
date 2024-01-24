@@ -112,12 +112,12 @@ class TriangleMath {
 		return Math.sqrt(result);
 	}
 	
-	static double getCircumferenceInt (int height, int bottom, int hypotenuse) {
+	static double getCircumference (int height, int bottom, int hypotenuse) {
 		if (bottom <= 0 || height <= 0 || hypotenuse <= 0) return 0;
 		return height + bottom + hypotenuse;
 	}
 	
-	static double getCircumferenceDouble (double height, double bottom, double hypotenuse) {
+	static double getCircumference (double height, double bottom, double hypotenuse) {
 		if (bottom <= 0 || height <= 0 || hypotenuse <= 0) return 0;
 		return height + bottom + hypotenuse;
 	}

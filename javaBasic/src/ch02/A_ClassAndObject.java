@@ -61,26 +61,63 @@ class ExampleClass1 {
 	// 생성자: 클래스의 인스턴스를 생성하는 순간에 호출되는 메서드
 	// 클래스와 같은 이름을 가지고있고, 반환타입이 존재하지 않음
 	// 클래스명 ([매개변수, ...]) { 인스턴스가 생성될때 할 작업 }
-//	ExampleClass1 (int attribute1, double arg2) {
-//		System.out.println("ExampleClass1 인스턴스 생성!!");
-//		// 의존성이 내부에서 주입하는 형태
-//		// 속성 값이 생성 이전에 결정이 되었기 때문에 코드의 안정성이 저하
-//		// attribute1 = 99;
-//		// attribute2 = -99.99;
-//		
-//		// 의존성을 외부에서 주입하는 형태
-//		// 속성 값이 생성 당시에 결정되기 때문에 코드의 안정성을 향상
-//		this.attribute1 = attribute1;
-//		// this 키워드: 자기 인스턴스를 지칭
-//		this.attribute2 = arg2;
-//		// this.staticMethod();
+	ExampleClass1 (int attribute1, double arg2) {
+		System.out.println("ExampleClass1 인스턴스 생성!!");
+		// 의존성이 내부에서 주입하는 형태
+		// 속성 값이 생성 이전에 결정이 되었기 때문에 코드의 안정성이 저하
+		// attribute1 = 99;
+		// attribute2 = -99.99;
+		
+		// 의존성을 외부에서 주입하는 형태
+		// 속성 값이 생성 당시에 결정되기 때문에 코드의 안정성을 향상
+		this.attribute1 = attribute1;
+		// this 키워드: 자기 인스턴스를 지칭
+		this.attribute2 = arg2;
+		// this.staticMethod();
+	}
+	
+	// 오버로딩: 같은 클래스 내에서 같은 이름의 메서드를 여러개 작성할 수 있도록 하는 방법
+	// 오버로딩 조건
+	// 1. 메서드 이름을 중복해서 작성하지만 매개변수의 타입 및 개수를 다르게 작성
+	// 2. 메서드의 반환타입과 메서드의 매개변수의 이름은 오버로딩에 영향을 미치지 않음
+	void overloadMethod () {
+		
+	}
+	
+	void overloadMethod (int arg) {
+		
+	}
+	
+	void overloadMethod (double arg) {
+		
+	}
+	
+	void overloadMethod (int arg1, double arg2) {
+		
+	}
+	
+	void overloadMethod (double arg1, int arg2) {
+		
+	}
+	
+//	int overloadMethod (double arg1, int arg2) {
+//		return 0;
 //	}
 	
-	ExampleClass1 (int attribute1, double arg2) {
-		System.out.println("생성!!");
-		this.attribute1 = attribute1;
-		attribute2 = arg2;
+//	void overloadMethod (double double1, int int1) {
+//		
+//	}
+	
+	// 생성자도 메서드의 일종이기 때문에 오버로딩이 가능
+	ExampleClass1 () {
+		this.attribute1 = 99;
+		this.attribute2 = -99.99;
 	}
+	
+	ExampleClass1 (int attribute1) {
+		this(attribute1, -99.99);
+	}
+	
 }
 
 // 축구선수 	(FootballPlayer)
@@ -274,6 +311,13 @@ public class A_ClassAndObject {
 		System.out.println(instance4.attribute2);
 		// instance4.attribute1 = 999;
 		// instance4.attribute2 = 99.99;
+		
+		ExampleClass1 instance5 = new ExampleClass1();
+		System.out.println(instance5.attribute1);
+		System.out.println(instance5.attribute2);
+		ExampleClass1 instance6 = new ExampleClass1(100);
+		System.out.println(instance6.attribute1);
+		System.out.println(instance6.attribute2);
 	}
 
 }
