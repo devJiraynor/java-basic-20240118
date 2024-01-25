@@ -318,6 +318,7 @@ public class A_ClassAndObject {
 		ExampleClass1 instance6 = new ExampleClass1(100);
 		System.out.println(instance6.attribute1);
 		System.out.println(instance6.attribute2);
+		
 	}
 
 }
