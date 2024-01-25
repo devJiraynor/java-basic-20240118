@@ -44,6 +44,8 @@ class Developer extends Human {
 	}
 }
 
+// 모든 클래스는 'Object'라고하는 최상위 클래스를 반드시 상속받고 있음
+
 public class B_Inheritance {
 
 	public static void main(String[] args) {
