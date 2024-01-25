@@ -43,6 +43,8 @@ public class A_JVM {
 		
 		System.out.println(sample.data);
 		
+		
+		
 		int number2 = number;
 		number2++;
 		System.out.println(number);
