@@ -28,7 +28,9 @@ class ExampleClass {
 	
 	// 클래스 메서드: 같은 클래스로 생성된 인스턴스가 공유하는 기능
 	// static 키워드 사용하여 선언
-	static void staticMethod() {
+	// 특징: 인스턴스 변수를 사용할 수 없음 / 일반적으로 인스턴스 변수를 사용하지 않는 기능을 구현할 때 사용
+	//      클래스로 직접 사용할 수 있고 인스턴스로도 사용할 수 있음
+	static void staticMethod () {
 		
 	}
 	
