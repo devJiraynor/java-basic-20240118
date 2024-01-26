@@ -22,6 +22,8 @@ abstract class Player {
 	String gender;
 	double experience;
 
+	// 추상클래스에서도 생성자를 만들 수는 있지만
+	// 하위클래스에서 호출하는 용도로만 사용
 	Player(String name, String species, String gender, double experience) {
 		this.name = name;
 		this.species = species;
