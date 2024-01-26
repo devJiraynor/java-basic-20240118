@@ -46,7 +46,11 @@ public class H_Polymorphism {
 		// 다운캐스팅: 업캐스팅된 객체를 다시 원래의 타입의 참조변수에 담을 수 있도록 변환하는 것
 		Developer1 developer2 = (Developer1) human2;
 		developer2.position = "";
-		
+
+		// Object 클래스의 참조변수는 어떠한 클래스의 인스턴스도 받을 수 있음
+		Object object1 = new Human1();
+		Object object2 = new Developer1();
+		Object object3 = new FootballPlayer1();
 		
 		FootballPlayer1 fp = new FootballPlayer1();
 		fp.name = "홍길동";
