@@ -77,7 +77,7 @@ public class G_Interface {
 
 	public static void main(String[] args) {
 		
-		AreaCalculation instance = new MyMathV2();
+		AreaCalculation instance = new MyMath();
 		
 	}
 
