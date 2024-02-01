@@ -31,7 +31,7 @@ public class D_Data {
 			System.out.print("작업 : ");
 			String input = scanner.nextLine();
 			if (input.equals("종료")) break;
-			if (!input.equals("입력") && !input.equals("종료")) continue;
+			if (!input.equals("입력") && !input.equals("보기")) continue;
 			
 			// '입력'라는 입력을 받으면 members 리스트에 요소 추가
 			if (input.equals("입력")) {
