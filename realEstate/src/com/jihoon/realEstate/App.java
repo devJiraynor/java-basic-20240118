@@ -7,6 +7,7 @@ import com.jihoon.realEstate.controller.implement.AuthControllerImplement;
 import com.jihoon.realEstate.dto.request.CheckIdRequestDto;
 import com.jihoon.realEstate.dto.request.SendCodeRequestDto;
 import com.jihoon.realEstate.dto.response.CheckIdResponseDto;
+import com.jihoon.realEstate.dto.response.SendCodeResponseDto;
 import com.jihoon.realEstate.interfaces.Code;
 import com.jihoon.realEstate.repository.EmailAuthenticationRepository;
 import com.jihoon.realEstate.repository.UserRepository;
@@ -76,6 +77,26 @@ public class App {
 				
 				SendCodeRequestDto sendCodeRequest = new SendCodeRequestDto();
 				sendCodeRequest.setEmail(email);
+				
+				SendCodeResponseDto sendCodeResponse = authController.sendCode(sendCodeRequest);
+				code = sendCodeResponse.getCode();
+				
+				if (code == Code.VF) {
+					System.out.println("잘못된 입력입니다.");
+					continue;
+				}
+				
+				if (code == Code.DE) {
+					System.out.println("중복된 이메일 입니다.");
+					continue;
+				}
+				
+				if (code == Code.DBE) {
+					System.out.println("데이터베이스 에러입니다.");
+					continue;
+				}
+				
+				System.out.println(sendCodeResponse.getData());
 				
 				// 3. 이메일 인증 처리
 				// 4. 회원가입 처리
