@@ -1,7 +1,9 @@
 package com.jihoon.realEstate.repository;
 
+import java.sql.SQLException;
+
 public interface UserRepository {
 
-	boolean existsById(String id);
+	boolean existsById(String id) throws SQLException;
 	
 }

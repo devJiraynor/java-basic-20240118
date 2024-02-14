@@ -45,6 +45,8 @@ public class App {
 					System.out.println("데이터베이스 에러입니다.");
 					continue;
 				}
+				
+				System.out.println("사용 가능한 아이디입니다.");
 				// 2. 이메일 인증 코드 전송
 				
 				// 3. 이메일 인증 처리
