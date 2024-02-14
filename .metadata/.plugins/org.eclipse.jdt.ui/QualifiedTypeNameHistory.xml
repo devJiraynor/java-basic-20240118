@@ -15,4 +15,23 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.controller.AuthController"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.dto.request.CheckIdRequestDto"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.dto.response.CheckIdResponseDto"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.controller.implement.AuthControllerImplement"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.service.AuthService"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.service.implement.AuthServiceImplement"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.repository.UserRepository"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.repository.implement.UserRepositoryImplement"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.interfaces.Code"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.dto.request.SendCodeRequestDto"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.repository.EmailAuthenticationRepository"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.repository.implement.EmailAuthenticationRepositoryImplement"/>
+    <fullyQualifiedTypeName name="com.jihoon.realEstate.dto.response.SendCodeResponseDto"/>
 </qualifiedTypeNameHistroy>

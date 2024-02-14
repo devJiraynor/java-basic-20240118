@@ -99,6 +99,8 @@ public class App {
 				System.out.println(sendCodeResponse.getData());
 				
 				// 3. 이메일 인증 처리
+				
+				
 				// 4. 회원가입 처리
 			}
 			if (input.equals("2")) System.out.println("로그인");
